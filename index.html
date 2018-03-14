@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="my-app/src/App.css">
+  <link rel="stylesheet" href="my-app/src/index.css">
+  <title>React App HTML</title>
+</head>
+
+<body>
+  <div class="App">
+    <header class="App-header">
+      <div class="FirstInput">
+        <form>
+
+          <ul class="value-list input city">
+            <p>Du kan välja en stad eller söka på ett restaurangnamn.</p>
+            <li class="hover" value="malmo" onclick="initMap()">MALMÖ</li>
+          </ul>
+          <input class="chosen-value input search" type="text" value="" placeholder="Sök Restaurang" />
+        </form>
+      </div>
+
+      <ul class="reviews__content" id="reviews__content">
+      </ul>
+      <div id="service-helper"></div>
+      <div id="map"></div>
+      <p id="demo"></p>
+    </header>
+  </div>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLZfjjacxqgAb7zm0BIVU-t9IMk6-ygmo&libraries=places"></script>
+  <script type="text/javascript" src="my-app/src/Alpha.js"></script>
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDLZfjjacxqgAb7zm0BIVU-t9IMk6-ygmo&location=55.604842,13.002749&radius=500" async defer></script> -->
+</body>
+
+</html>
