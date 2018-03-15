@@ -22,7 +22,7 @@ function initMap() {
   service.nearbySearch({
     location: pyrmont,
     radius: 1000,
-    type: ['restaurant']
+    type: ['bar']
   }, callback);
 }
 
